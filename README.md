@@ -72,7 +72,7 @@ Upon successful installation of `jupyter-apache-zeppelin-proxy`, your Jupyter en
 * If you are using Jupyter Notebook, on the `New` menu, select `Zeppelin`. If you are using JupyterLab, select the Zeppelin icon on the launcher.
 
 <p align="center">
-  <img alt="image" width="600" src="https://github.com/tiaden/jupyter-apache-zeppelin-proxy/raw/main/img/combined_launchers.png">
+  <img alt="image" width="600" src="https://github.com/tiaden/jupyter-apache-zeppelin-proxy/raw/master/img/apache_zeppelin_jupyter_lab.png">
 </p>
 
 
@@ -101,7 +101,7 @@ In the environment that you have installed the package:
 * Check if their Python version is 3.9 or higher
     ```bash
     $ python --version
-    Python 3.9.12
+    Python 3.8.10
     ```
 
 * Ensure that `jupyter-apache-zeppelin-proxy` and the `jupyter` executables are in the same environment as the python executable.
@@ -159,4 +159,4 @@ In the environment that you have installed the package:
 ## Feedback
 
 We encourage you to try this repository with your environment and provide feedback.
-If you encounter a technical issue or have an enhancement request, create an issue [here](https://github.com/tiaden/issues)
+If you encounter a technical issue or have an enhancement request, create an issue [here](https://github.com/tiaden/jupyter-apache-zeppelin-proxy/issues)

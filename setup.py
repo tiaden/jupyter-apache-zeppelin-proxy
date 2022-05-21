@@ -12,8 +12,8 @@ long_description = (HERE / "README.md").read_text()
 
 setuptools.setup(
     name="jupyter-apache-zeppelin-proxy",
-    version="1.0.0",
-    url="https://github.com/tiaeden/jupyter-zeppelin-proxy",
+    version="1.0.3",
+    url="https://github.com/tiaden/jupyter-apache-zeppelin-proxy",
     author="Edem Tiassou",
     author_email="workmail.edem@gmail.com",
     license="MIT LICENSE",
@@ -34,10 +34,11 @@ setuptools.setup(
         "Intended Audience :: Developers",
         "Natural Language :: English",
         "Programming Language :: Python",
+        "Programming Language :: Python :: 3.8",
         "Programming Language :: Python :: 3.9",
         "Programming Language :: Python :: 3.10",
     ],
-    python_requires="~=3.9",
+    python_requires="~=3.8",
     install_requires=[
         "jupyter-server-proxy"
     ],
@@ -45,7 +46,7 @@ setuptools.setup(
     extras_require={"dev": ["black", "ruamel.yaml"] + tests_require},
     entry_points={
         # jupyter-server-proxy uses this entrypoint
-        "jupyter_serverproxy_servers": ["zeppelin = jupyter_zeppelin_proxy:setup_apache_zeppelin"],
+        "jupyter_serverproxy_servers": ["zeppelin = jupyter_apache_zeppelin_proxy:setup_apache_zeppelin"],
     },
-    package_data={"jupyter_zeppelin_proxy": ["icons/*"]},
+    package_data={"jupyter_apache_zeppelin_proxy": ["icons/*"]},
 )
