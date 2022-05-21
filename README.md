@@ -98,7 +98,7 @@ In the environment that you have installed the package:
     /usr/bin/zeppelin-daemon
     ```
 
-* Check if their Python version is 3.9 or higher
+* Check if their Python version is 3.8 or higher
     ```bash
     $ python --version
     Python 3.8.10
