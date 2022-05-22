@@ -25,6 +25,7 @@ After downloading Apache Zeppelin, make sure to create a symbolic link in PATH t
 
 ```bash
 # if the downloaded Apache Zeppelin package resides at /opt/apache-zeppelin
+# As root or superuser
 ln -s /opt/apache-zeppelin/bin/zeppelin-daemon.sh /usr/bin/zeppelin-daemon
 ```
 
