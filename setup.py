@@ -12,7 +12,7 @@ long_description = (HERE / "README.md").read_text()
 
 setuptools.setup(
     name="jupyter-apache-zeppelin-proxy",
-    version="1.0.3",
+    version="1.0.4",
     url="https://github.com/tiaden/jupyter-apache-zeppelin-proxy",
     author="Edem Tiassou",
     author_email="workmail.edem@gmail.com",
