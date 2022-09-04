@@ -3,7 +3,11 @@ import shutil
 
 
 def _get_env(port):
-    return {"ZEPPELIN_PORT": str(port)}
+    # Start Apache Zeppelin in ZEPPELIN_NOTEBOOK_DIR env variable if set.
+    # If not, start in user home directory
+
+    working_dir = os.getenv("ZEPPELIN_WORKDIR", os.path.expanduser('~'))
+    return {"ZEPPELIN_PORT": str(port), "ZEPPELIN_NOTEBOOK_DIR": str(working_dir)}
 
 
 def _get_cmd():
